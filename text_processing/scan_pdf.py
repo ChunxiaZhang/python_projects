@@ -8,7 +8,8 @@ def print_pdf(root, dirs, files):
         if not re.search(r".*\.pdf", path): continue
         if re.search(r".*\.pdf", path):
             print(path)
-            
+  
+# Use the os.walk function to traverse the file system            
 for root, dirs, files in os.walk('.'):
     print_pdf(root, dirs, files)              
             
